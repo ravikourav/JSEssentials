@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 function JsFunctions() {
   //Functions in JavaScript And React
   //Naming Convention for Functions - In Java Script We use camelCase, In React We Use PascalCase
@@ -7,13 +9,16 @@ function JsFunctions() {
   function jsFunction() {
     return 'Hello, This is Named Function!'
   }
-  jsFunction()
 
   // Arrow Function
   const arrowFunction = () => {
     return 'Hello, This is Arrow Function!'
   }
-  arrowFunction()
+
+  useEffect(() => {
+    console.log(jsFunction())
+    console.log(arrowFunction())
+  }, [])
 
   // why arrow function?
   // 1. Shorter Syntax

@@ -18,11 +18,11 @@ function ArrayMethods() {
     } else {
       return accumulator
     }
-  })
+  }, [])
 
   return (
     <div>
-      <h1>ArrayMethods</h1>
+      <h2>ArrayMethods</h2>
       <h2>Using map function to render array</h2>
       {carList}
 

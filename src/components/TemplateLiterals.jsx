@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 function TemplateLiterals() {
   // Template Literals allow for embedded expressions and multi-line strings
 
@@ -9,12 +11,11 @@ function TemplateLiterals() {
   // and embed expressions using ${expression}
   // this expression can be a variable, function call, or any valid JavaScript expression
 
-  return (
-    <div>
-      <h1>Template Literals</h1>
-      <p>{greet('Alice')}</p>
-    </div>
-  )
+  useEffect(() => {
+    console.log(greet('Alice'))
+  }, [])
+
+  return <div>TemplateLiterals</div>
 }
 
 export default TemplateLiterals
